@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "",
+  "description": "challenge para CopyWrite que consiste en una api que retorna un texto invertido y un front que permite al usuario ingresar un texto para que la api lo invierta, mostrando todos los resultados en el front",
   "main": "index.jsx",
   "scripts": {
     "build": "webpack",
@@ -9,8 +9,11 @@
     "dev": "webpack-dev-server --open",
     "postinstall": "npm run build"
   },
+  "engines": {
+    "node": "12.22.12"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Redf0xD - https://github.com/Redf0xD",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.4.4",
