@@ -10,6 +10,9 @@
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix"
   },
+  "engines": {
+    "node": "12.22.12"
+  },
   "author": "Redf0xD - https://github.com/Redf0xD",
   "license": "ISC",
   "devDependencies": {
