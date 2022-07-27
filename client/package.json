@@ -2,9 +2,9 @@
   "name": "client",
   "version": "1.0.0",
   "description": "challenge para CopyWrite que consiste en una api que retorna un texto invertido y un front que permite al usuario ingresar un texto para que la api lo invierta, mostrando todos los resultados en el front",
-  "main": "index.jsx",
+  "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack -p -progress --colors --bail --optimize-dedupe --optimize-minimize",
+    "build": "webpack --mode production",
     "lint": "standard",
     "dev": "webpack-dev-server --open",
     "postinstall": "npm run build"
