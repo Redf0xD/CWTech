@@ -1,11 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'src/index.html'
-    })
+  entry: [
+    './src/index.js'
   ],
+  output: {
+    path: __dirname,
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
   module: {
     rules: [
       {
@@ -20,14 +23,6 @@ module.exports = {
             ]
           }
         }
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader'
-          }
-        ]
       }
     ]
   }
