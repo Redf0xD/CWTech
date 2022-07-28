@@ -1,9 +1,11 @@
 import {
+  LOADING,
   SAVE_WORD
 } from './types'
 
 const initialState = {
-  searches: []
+  searches: [],
+  loading: false
 }
 
 export default function rootReducer (state = initialState, action) {
@@ -12,7 +14,14 @@ export default function rootReducer (state = initialState, action) {
     case SAVE_WORD: {
       return {
         ...state,
-        searches: [...state.searches, payload]
+        searches: [payload, ...state.searches],
+        loading: false
+      }
+    }
+    case LOADING: {
+      return {
+        ...state,
+        loading: true
       }
     }
     default:

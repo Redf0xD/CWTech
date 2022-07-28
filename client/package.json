@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "challenge para CopyWrite que consiste en una api que retorna un texto invertido y un front que permite al usuario ingresar un texto para que la api lo invierta, mostrando todos los resultados en el front",
   "main": "index.js",
+  "homepage": "https://Redf0xD.github.io/CWTech/",
   "scripts": {
     "build": "webpack --mode production",
     "lint": "standard",
     "dev": "webpack-dev-server --open",
     "postinstall": "npm run build",
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Redf0xD - https://github.com/Redf0xD",
@@ -32,6 +34,7 @@
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
