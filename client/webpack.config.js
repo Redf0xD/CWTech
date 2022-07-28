@@ -3,13 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   output: {
     filename: 'app.bundle.js',
-    publicPath: '/',
-    path: __dirname
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: './index.html'
+      template: 'src/index.html'
     })
   ],
   module: {
@@ -26,14 +24,6 @@ module.exports = {
             ]
           }
         }
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader'
-          }
-        ]
       }
     ]
   }
