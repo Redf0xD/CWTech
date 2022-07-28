@@ -10,9 +10,6 @@
     "postinstall": "npm run build",
     "start": "node server.js"
   },
-  "engines": {
-    "node": "12.22.12"
-  },
   "keywords": [],
   "author": "Redf0xD - https://github.com/Redf0xD",
   "license": "ISC",
