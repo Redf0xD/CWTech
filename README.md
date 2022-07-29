@@ -70,7 +70,7 @@ npm i
 Levanta el servicio
 
 ```bash
-npm run server
+npm run dev
 ```
 
 Se abrira una pestaña en tu navegador
